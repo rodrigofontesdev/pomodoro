@@ -4,7 +4,7 @@
 
 A simple Pomodoro Timer app that will help you manage your time and let you focus on any tasks.
 
-The purpose of the project was learn about important tools and concepts of React. Like CSS-in-JS, routes, hooks, controlled and uncontrolled components.
+The purpose of this project was learn about important tools and concepts of React. Like CSS-in-JS, routes, hooks, controlled and uncontrolled components.
 
 # Prerequisites
 
