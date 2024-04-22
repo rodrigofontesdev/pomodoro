@@ -4,7 +4,7 @@
 
 A simple Pomodoro Timer app that will help you manage your time and let you focus on any tasks.
 
-The purpose of the project was learn about important tools and concepts of React. Like styled components, routes, hooks, controlled and uncontrolled components.
+The purpose of the project was learn about important tools and concepts of React. Like CSS-in-JS, routes, hooks, controlled and uncontrolled components.
 
 # Prerequisites
 
@@ -25,13 +25,20 @@ The purpose of the project was learn about important tools and concepts of React
 
 # I've Learned
 
+- CSS-in-JS with Styled Components
+- Find and fix problems in code with ESLint
+- Routing with React Router
+- Controlled and uncontrolled components (React Hook Form)
+- Form validation with Zod
+- Side effect in components (`useEffect()`)
+- Alternate for Props Drilling (`Context API`)
 - 
 
 # Built With
 
 - React
 - TypeScript
-- Styled components
+- Styled Components
 
 # License
 
