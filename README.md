@@ -25,14 +25,15 @@ The purpose of the project was learn about important tools and concepts of React
 
 # I've Learned
 
-- CSS-in-JS with Styled Components
-- Find and fix problems in code with ESLint
-- Routing with React Router
-- Controlled and uncontrolled components (React Hook Form)
-- Form validation with Zod
-- Side effect in components (`useEffect()`)
-- Alternate for Props Drilling (`Context API`)
-- 
+- CSS-in-JS styling technique with Styled Components
+- Verify code quality with ESLint
+- How make routes with React Router DOM
+- Controlled and uncontrolled components
+- Form validation with React Hook Form and Zod
+- Perform side effects in components (`useEffect()`)
+- Share data between components and avoid prop drilling (`Context API`)
+- Manage complex states (`useReducer()`)
+- Immutable state in a more convenient way with Immer
 
 # Built With
 
