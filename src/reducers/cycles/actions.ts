@@ -6,7 +6,27 @@ export enum ActionTypes {
   MARK_CURRENT_CYCLE_AS_FINISHED = 'MARK_CURRENT_CYCLE_AS_FINISHED',
 }
 
-export function addNewCycleAction(newCycle: Cycle) {
+interface addNewCycleActionProps {
+  type: ActionTypes.ADD_NEW_CYCLE
+  payload: {
+    newCycle: Cycle
+  }
+}
+
+interface interruptCurrentCycleActionProps {
+  type: ActionTypes.INTERRUPT_CURRENT_CYCLE
+}
+
+interface markCurrentCycleAsFinishedActionProps {
+  type: ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED
+}
+
+export type ActionProps =
+  | addNewCycleActionProps
+  | interruptCurrentCycleActionProps
+  | markCurrentCycleAsFinishedActionProps
+
+export function addNewCycleAction(newCycle: Cycle): ActionProps {
   return {
     type: ActionTypes.ADD_NEW_CYCLE,
     payload: {
@@ -15,13 +35,13 @@ export function addNewCycleAction(newCycle: Cycle) {
   }
 }
 
-export function interruptCurrentCycleAction() {
+export function interruptCurrentCycleAction(): ActionProps {
   return {
     type: ActionTypes.INTERRUPT_CURRENT_CYCLE,
   }
 }
 
-export function markCurrentCycleAsFinishedAction() {
+export function markCurrentCycleAsFinishedAction(): ActionProps {
   return {
     type: ActionTypes.MARK_CURRENT_CYCLE_AS_FINISHED,
   }
