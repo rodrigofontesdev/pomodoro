@@ -26,6 +26,8 @@ export function Countdown() {
         )
 
         if (secondsDifference >= totalSeconds) {
+          document.title = '00:00'
+
           markCurrentCycleAsFinished()
           setSecondsPassed(totalSeconds)
           clearInterval(interval)

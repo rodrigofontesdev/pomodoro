@@ -41,6 +41,11 @@ export function Home() {
     reset()
   }
 
+  function handleInterruptCurrentCycle() {
+    interruptCurrentCycle()
+    document.title = 'Ignite Timer'
+  }
+
   const task = watch('task')
   const isSubmitDisabled = !task
 
@@ -54,7 +59,10 @@ export function Home() {
         <Countdown />
 
         {activeCycle ? (
-          <StopCountdownButton onClick={interruptCurrentCycle} type="button">
+          <StopCountdownButton
+            onClick={handleInterruptCurrentCycle}
+            type="button"
+          >
             <HandPalm size={24} />
             Interromper
           </StopCountdownButton>
