@@ -1,6 +1,7 @@
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 import { Router } from './Router'
+import { CountdownContextProvider } from './contexts/CountdownContext'
 import { CyclesContextProvider } from './contexts/CyclesContext'
 
 import { GlobalStyle } from './styles/global'
@@ -11,7 +12,9 @@ export function App() {
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
         <CyclesContextProvider>
-          <Router />
+          <CountdownContextProvider>
+            <Router />
+          </CountdownContextProvider>
         </CyclesContextProvider>
       </BrowserRouter>
 
